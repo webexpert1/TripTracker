@@ -11,6 +11,7 @@ namespace TripTracker.BackService.Data
     public class TripContext: DbContext
     {
         public TripContext(DbContextOptions<TripContext> options) : base(options) { }
+        public TripContext() { }
         public DbSet<Trip> Trips { get; set; }
 
         //protected override void OnModelCreating(ModelBuilder modelBuilder)
